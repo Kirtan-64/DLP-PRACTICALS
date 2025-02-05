@@ -7,7 +7,7 @@ def create_finite_automaton():
     initial_state = int(input("Enter the initial state: ")) - 1  
 
     num_accepting_states = int(input("Enter the number of accepting states: "))
-    accepting_states = set(map(lambda x: int(x) - 1, input(f"Enter {num_accepting_states} accepting states separated by space: ").split()))  # Convert to 0-based index
+    accepting_states = set(map(lambda x: int(x) - 1, input(f"Enter {num_accepting_states} accepting states separated by space: ").split()))
 
     transitions = [[-1 for _ in range(num_symbols)] for _ in range(num_states)]
 
